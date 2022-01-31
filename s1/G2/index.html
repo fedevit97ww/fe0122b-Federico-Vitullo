@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sviluppo di un blog</title>
+</head>
+
+<body>
+
+    <header>
+
+        <figure> &nbsp;&nbsp;&nbsp; <img src="assets/img/logo.svg" alt="Epicode" width="200">
+            <figcaption>Epicode&nbsp;-&nbsp;Il blog dei developers</figcaption>
+        </figure>
+
+        <nav>
+            <ul>
+                <li> <a href="#"> Home</a> </li>
+                <li> <a href="#">Articoli</a> </li>
+                <li><a href="#"> Job</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <hr>
+    <main>
+        <article>
+            <h1>Come creare un templete per i post</h1>
+            di Mario Rossi&nbsp;&nbsp; pubblicato il 25-10-2020
+            <p>la prima cosa da fare è dividere in blocchi logici la pagina identificando <b>le parti comuni</b> da
+                applicare
+                a
+                tutte le pagine</p>
+
+            Le varie aree saranno suddivise in : <ul>
+                <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+                <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code></li>
+                <li>Contenuti di fine pagina comuni da inserire nel tag<code>&lt;footer&gt;</code>
+                </li>
+            </ul>
+
+
+
+
+            <h2>Formattazione del codice</h2>
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti
+                <b>da selezionare con i CSS</b>.Perciò i passi saranno:
+            </p>
+
+            <ol>
+                <li>Progettare su carta il markup finale,assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso </li>
+                <li>Applicare gli stili CSS</li>
+            </ol>
+            <p> L'applicazione di stili CSS è cresciuta di negli anni fino a raggiungere la diffusione pressoché totale.
+            </p>
+            <br>
+            <table>
+                <caption>Diffusione dei Css</caption>
+                <tr>
+                    <th>Anno</th>
+                    <th>&percnt; di utilizzo</th>
+                    <th>Supporto browsers</th>
+                </tr>
+                <tr>
+                    <td>2000</td>
+                    <td>20&percnt;</td>
+                    <td>17&percnt;</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>35&percnt;</td>
+                    <td>22&percnt;</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>45&percnt;</td>
+                    <td>42&percnt;</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>80&percnt;</td>
+                    <td>51&percnt;</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>100&percnt;</td>
+                    <td>76&percnt;</td>
+                </tr>
+
+
+            </table>
+
+
+
+            <p>Un test di validazione potrà essere fatto tramite il <a href="#">tool online </a>dedicato allo scopo</p>
+
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/_mvNVQ2pjlI?start=15"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen> </iframe>
+
+
+        </article>
+
+
+        <section>
+            <h3>Novità</h3>
+            <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter</p>
+            <form method="get" action="miosito.php">
+                <fieldset>
+                    <input type="email" name="email" id="email" placeholder="Inserisci la mail">
+                    <button type="submit">Iscriviti</button>
+
+
+                </fieldset>
+            </form>
+        </section>
+
+
+
+
+        <aside>
+            <h3>Articoli correlati</h3>
+            <div>
+                <a href="#">Validare Html</a>
+                <p>Categoria:develop</p>
+                <p>Data:18/9/2020</p>
+            </div>
+            <div>
+                <a href="#">Correggere la sintassi</a>
+                <p>Categoria:develop</p>
+                <p>Data:16/9/2020</p>
+            </div>
+            <div>
+                <a href="#">Meno kb nella pagina</a>
+                <p>Categoria:ottimizzazione</p>
+                <p>Data:30/9/2020</p>
+            </div>
+
+        </aside>
+    </main>
+
+
+    <hr>
+    <footer>
+
+        <p><i>Blog Epicode &copy;2021</i></p>
+
+        <p> <i>Testata online di Mario rossi - via Luigi Einaudi 2-
+                <a href="mailto:info@epicode.school">info@epicode.school
+                </a></i>
+            </p>
+
+
+    </footer>
+
+</body>
+
+</html>
