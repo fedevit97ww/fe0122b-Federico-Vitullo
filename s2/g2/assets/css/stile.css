@@ -22,6 +22,15 @@ hr {
 
 /* rimuove l'elemento */
 
+/* BUTTON FIXED */
+.toTop {
+    position: fixed;
+    bottom: 10px;
+    right: -7px;
+}
+
+
+
 /* HEADER */
 header {
     background: rgb(0, 160, 198);
@@ -33,6 +42,9 @@ header {
     box-shadow: 0 3px 3px #444;
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header div img {
@@ -45,6 +57,12 @@ header nav ul {
 
 header nav li {
     list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav li:last-child {
+    margin-right: 0;
 }
 
 header nav li a {
@@ -60,18 +78,6 @@ header nav li a::before {
     content: "\22c6\0020";
 }
 
-.navp ul>li {
-    display: inline;
-    margin-right: 10px;
-
-}
-
-.tenda {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
 /* MAIN */
 main {
     background-color: #fff;
@@ -82,7 +88,7 @@ main {
 
 section {
     background-color: #e3e3e3;
-    padding: 1em;
+    padding: 2.5em 1em 1em;
     margin-bottom: 2em;
     position: relative;
 }
@@ -94,17 +100,13 @@ section h2 {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1em;
+    background-color: #a3a3a3;
     position: absolute;
-    top: -12px;
-    border: 3px transparent grey;
-    background-color: grey;
-    padding: 2px 20px 2px 20px;
-    box-shadow: 2px 2px rgb(122, 118, 118);
+    top: -0.5em;
+    left: 5%;
+    padding: 0 1em;
+    box-shadow: 1px 1px 2px #333;
 
-}
-
-.formtext {
-    margin-top: 25px;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -124,25 +126,22 @@ blockquote {
     margin-bottom: 1.2em;
 }
 
-#logohtml {
-    width: 20%;
-    display: inline-block;
-    border: 5px solid rgb(9, 106, 145);
-    float: left;
-    padding: 5px;
-    outline: 5px solid purple;
-    padding: 3px;
-    margin-right: 25px;
-}
-
-.plogo {
-    display: inline-block;
-    clear: left;
-    margin-bottom: 15px;
-}
-
 h1+p {
     color: #a0a0a0;
+}
+
+.imgLeft {
+    float: left;
+    margin-right: 20px;
+    border: 4px solid #00A0C6;
+    outline: 4px solid #a02571;
+    padding: 3px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 ul,
@@ -189,7 +188,6 @@ thead tr {
 }
 
 th,
-
 td {
     padding: 12px 15px;
     vertical-align: bottom;
@@ -261,7 +259,6 @@ footer {
 footer a {
     color: fuchsia;
 }
-
 .fa-caret-square-up{
     color: violet;
     display: inline-block;
@@ -270,6 +267,10 @@ footer a {
     position: fixed;
     top: 45vh;
     right: -11px;
+    background-color: rgba(0, 160, 198, 0.5);
+    height: 44px;
+    line-height: 44px;
+    border-radius: 10%;
 }
 
 .fa-calendar-alt{
@@ -281,6 +282,10 @@ footer a {
     position: fixed;
     top: 35vh;
     right: -11px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 42px;
+    line-height: 39px;
+    border-radius: 10%;
 
 }
 
@@ -293,10 +298,131 @@ footer a {
     position: fixed;
     top: 25vh;
     right: -11px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 42px;
+    line-height: 38px;
+    border-radius: 10%;
 }
-@media screen and (min-widht:450px){
-    .tableresponsive  {
+@media screen and (min-width:440px) {
+    body {
+        font-size: 1.7rem;
+        
+    }
+    .tableresponsive {
         margin-right: auto;
         margin-left: auto;
+         width: 80vw;
+ 
     }
+    .ytvideo{
+        margin-top: 10px;
+        margin-bottom: 50px;
+        height: 50vh;
+    }
+    .fa-plus-square, .fa-calendar-alt , .fa-caret-square-up{
+        margin-top: 15vh;
+    }
+}
+@media screen and (min-width:620px){
+    body{
+        font-size: 2rem;
+        line-height: 1.7;
+    }
+    section form{
+        font-size: 2.2em;
+    }
+    #user_email{
+        width: 40vw;
+        height: auto;
+        font-size: 2rem;
+    }
+    .news{
+        font-size: 1.3em;
+    }
+    button[type=submit] {
+        font-size: 2rem;
+    }
+    .imgLeft{
+        width: 15vw;
+        height: auto;
+       
+  }
+ 
+header div:first-of-type {
+    font-size: 1.1em;
+}
+header ul:first-of-type{
+    font-size: 1.1em;
+}
+
+    
+
+}
+@media screen and (min-width:740px){
+    body{
+        font-size: 2rem;
+        line-height: 2;
+    }
+   
+    .logodelblog{
+        width: 25vh;
+        height: auto;
+        
+    }
+   
+    .imgLeft{
+        width: 12vw;
+        height: auto;
+       
+  }
+  .fa-plus-square, .fa-calendar-alt , .fa-caret-square-up{
+    margin-top: 35vh;
+}
+}
+@media screen and (min-width:900px){
+    body{
+        font-size: 2.2rem;
+        line-height: 2.2;
+    }
+    header div:first-of-type {
+        font-size: 1em;
+    }
+    header ul:first-of-type{
+        font-size: 1em;
+    }
+    .headofpage{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    .imgLeft{
+        width: 10vw;
+        height: auto;
+       
+  }
+}
+@media screen and (min-width:1200px){
+    body{
+        font-size: 2.6rem;
+        line-height: 2.2;
+    }
+    .imgLeft{
+        width: 10vw;
+        height: auto;
+       
+  }
+  .Titepic{
+    margin-bottom:-20px;
+  }
+}
+@media print {
+    footer, .ytvideo, .headofpage, .secform, aside, .social, .toTop{
+display:none;
+}
+main{
+    box-shadow: none;
+}
+   body{
+       font-size: 23px;
+   }
 }
