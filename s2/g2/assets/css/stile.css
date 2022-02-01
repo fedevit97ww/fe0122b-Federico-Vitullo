@@ -305,7 +305,7 @@ footer a {
 }
 @media screen and (min-width:440px) {
     body {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         
     }
     .tableresponsive {
@@ -317,7 +317,7 @@ footer a {
     .ytvideo{
         margin-top: 10px;
         margin-bottom: 50px;
-        height: 50vh;
+        height: 30vh;
     }
     .fa-plus-square, .fa-calendar-alt , .fa-caret-square-up{
         margin-top: 15vh;
@@ -399,6 +399,13 @@ header ul:first-of-type{
         width: 10vw;
         height: auto;
        
+  }
+  .ytvideo{
+    height: 40vh;
+    
+  }
+  .Titepic{
+    margin-bottom:-20px;
   }
 }
 @media screen and (min-width:1200px){
