@@ -331,4 +331,18 @@ footer a {
         display: none;
     }
 }
-
+@media screen and (min-width:800px) {
+   main{
+       display: grid;
+       grid-template-columns:65% 30%;
+       grid-gap:5%;
+       
+   }
+   aside section {
+    margin-top: 25px;
+    position: sticky;
+    top: 250px;
+    z-index: 100;
+   
+}
+}
