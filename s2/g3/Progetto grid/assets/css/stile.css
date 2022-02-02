@@ -338,11 +338,14 @@ footer a {
        grid-gap:5%;
        
    }
+   body{
+       
+   }
    aside section {
-    margin-top: 25px;
+    margin-top: 50px;
     position: sticky;
     top: 250px;
-    z-index: 100;
+z-index: 40;
    
 }
 }
