@@ -12,6 +12,39 @@ body {
     background-position: center center;
 }
 
+@media screen and (min-width:500px) {
+    html {
+        font-size: 70%;
+    }
+
+    body {
+        line-height: 1.8;
+    }
+
+
+
+}
+
+@media screen and (min-width:700px) {
+    html {
+        font-size: 80%;
+    }
+
+    body {
+        line-height: 2;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 100%;
+    }
+
+    body {
+        line-height: 2.4;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -29,7 +62,27 @@ hr {
     right: -7px;
 }
 
+.social {
+    position: fixed;
+    bottom: 20vh;
+    right: -7px;
+}
 
+.toTop a,
+.social a {
+    color: #c77ea2;
+    font-size: 4rem;
+    display: block;
+}
+
+.social a {
+    color: rgb(45, 101, 185);
+}
+
+.toTop .far,
+.social .far {
+    background: white;
+}
 
 /* HEADER */
 header {
@@ -45,6 +98,18 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+@media screen and (min-width:800px) {
+    header {
+        padding: 1.3em;
+    }
+}
+
+@media screen and (min-width:800px) {
+    header {
+        padding: 1em;
+    }
 }
 
 header div img {
@@ -84,6 +149,12 @@ main {
     box-shadow: 0 3px 3px #444;
     padding: 2em 1em;
     margin-bottom: 1.5em;
+}
+
+@media screen and (min-width:700px) {
+    main {
+        padding: 2em;
+    }
 }
 
 section {
@@ -177,6 +248,18 @@ table {
     margin-bottom: 2em;
 }
 
+@media screen and (min-width:500px) {
+    table {
+        margin: 0 auto 2em;
+    }
+}
+
+@media screen and (min-width:700px) {
+    table {
+        width: 70%;
+    }
+}
+
 caption {
     font-weight: bold;
     font-style: italic;
@@ -221,6 +304,23 @@ button {
     font-weight: bold;
 }
 
+@media screen and (min-width:500px) {
+    input {
+        display: inline-block;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:700px) {
+    input {
+        padding: 15px;
+    }
+
+    button {
+        padding: 15px 30px;
+    }
+}
+
 /* ELEMENTI NELL' ASIDE */
 aside h2 {
     text-align: center;
@@ -231,7 +331,7 @@ aside h2 {
     margin-bottom: 1em;
 }
 
-aside div {
+aside .divflex div {
     background-color: #e3e3e3;
     border: 1px solid #c3c3c3;
     margin-bottom: 1em;
@@ -256,181 +356,98 @@ footer {
     font-size: 1.2rem;
 }
 
+@media screen and (min-width:800px) {
+    footer {
+        padding: 1em 12em;
+    }
+}
+
 footer a {
     color: fuchsia;
 }
-.fa-caret-square-up{
-    color: violet;
-    display: inline-block;
-    font-size: 50px;
-    z-index: 2;
-    position: fixed;
-    top: 45vh;
-    right: -11px;
-    background-color: rgba(0, 160, 198, 0.5);
-    height: 44px;
-    line-height: 44px;
-    border-radius: 10%;
-}
 
-.fa-calendar-alt{
-    color: rgb(11, 152, 199);
-    display: inline-block;
-    font-size: 50px;
-    font-weight: lighter;
-    z-index: 2;
-    position: fixed;
-    top: 35vh;
-    right: -11px;
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 42px;
-    line-height: 39px;
-    border-radius: 10%;
 
-}
+@media screen and (min-width:1200px) {
 
-.fa-plus-square {
-    color: rgb(11, 152, 199);
-    display: inline-block;
-    font-size: 50px;
-    font-weight: lighter;
-    z-index: 2;
-    position: fixed;
-    top: 25vh;
-    right: -11px;
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 42px;
-    line-height: 38px;
-    border-radius: 10%;
-}
-@media screen and (min-width:440px) {
-    body {
-        font-size: 1.5rem;
-        
-    }
-    .tableresponsive {
-        margin-right: auto;
+    header,
+    main,
+    footer {
+        max-width: 1200px;
         margin-left: auto;
-         width: 80vw;
-    
- 
+        margin-right: auto;
     }
-    .ytvideo{
-        margin-top: 10px;
-        margin-bottom: 50px;
-        height: 30vh;
-    }
-    .fa-plus-square, .fa-calendar-alt , .fa-caret-square-up{
-        margin-top: 15vh;
-    }
-}
-@media screen and (min-width:620px){
-    body{
-        font-size: 2rem;
-        line-height: 1.7;
-    }
-    section form{
-        font-size: 2.2em;
-    }
-    #user_email{
-        width: 40vw;
-        height: auto;
-        font-size: 2rem;
-    }
-    .news{
-        font-size: 1.3em;
-    }
-    button[type=submit] {
-        font-size: 2rem;
-    }
-    .imgLeft{
-        width: 15vw;
-        height: auto;
-       
-  }
- 
-header div:first-of-type {
-    font-size: 1.1em;
-}
-header ul:first-of-type{
-    font-size: 1.1em;
 }
 
-    
-
-}
-@media screen and (min-width:740px){
-    body{
-        font-size: 2rem;
-        line-height: 2;
-    }
-   
-    .logodelblog{
-        width: 25vh;
-        height: auto;
-        
-    }
-   
-    .imgLeft{
-        width: 12vw;
-        height: auto;
-       
-  }
-  .fa-plus-square, .fa-calendar-alt , .fa-caret-square-up{
-    margin-top: 35vh;
-}
-}
-@media screen and (min-width:900px){
-    body{
-        font-size: 2.2rem;
-        line-height: 2.2;
-    }
-    header div:first-of-type {
-        font-size: 1em;
-    }
-    header ul:first-of-type{
-        font-size: 1em;
-    }
-    .headofpage{
-        padding-top: 20px;
-        padding-bottom: 10px;
-        margin-bottom: 15px;
-    }
-    .imgLeft{
-        width: 10vw;
-        height: auto;
-       
-  }
-  .ytvideo{
-    height: 40vh;
-    
-  }
-  .Titepic{
-    margin-bottom:-20px;
-  }
-}
-@media screen and (min-width:1200px){
-    body{
-        font-size: 2.6rem;
-        line-height: 2.2;
-    }
-    .imgLeft{
-        width: 10vw;
-        height: auto;
-       
-  }
-  .Titepic{
-    margin-bottom:-20px;
-  }
-}
 @media print {
-    footer, .ytvideo, .headofpage, .secform, aside, .social, .toTop{
-display:none;
+    body {
+        font-size: 24px;
+        padding: 0;
+        background-image: none;
+
+    }
+
+    main {
+        box-shadow: none;
+        margin: 0;
+    }
+
+    th {
+        background-color: #d3d3d3;
+    }
+
+    header,
+    article section,
+    aside,
+    footer,
+    .social,
+    .toTop {
+        display: none;
+    }
 }
-main{
-    box-shadow: none;
+
+@media screen and (min-width:500px) {
+    .logcontainer div {
+        display: flex;
+        padding: 0.5em 0.8em;
+
+    }
+
+    .logcontainer div img {
+        flex-grow: 1;
+    }
+
+    .logcontainer div p {
+        flex-grow: 1;
+    }
+
+
+    .divflex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .divflex div {
+        margin-right: 4%;
+    }
+
 }
-   body{
-       font-size: 23px;
-   }
+
+@media screen and (min-width:800px) {
+    main {
+        display: flex;
+
+    }
+
+    .divflex {
+        flex-direction: column-reverse;
+        width: 33vw;
+        margin-left: 40px;
+
+
+    }
+
+    aside h2 {
+        margin-left: 25px;
+    }
+
 }
