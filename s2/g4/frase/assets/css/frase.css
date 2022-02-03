@@ -1,0 +1,61 @@
+html{
+    font-family:'Bree Serif' ;
+}
+main{
+    position: relative;
+    top:40vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#testoAlternato{
+  padding: 23px;
+border: 2px solid grey;
+font-size: 1.4rem;
+line-height: 1.2;
+}
+
+@keyframes parolealternate {
+    0%{opacity: 0; transform: translateY(-20px); }
+   
+    25%{opacity: 0.1;transform: translateY(-15px);}
+    50%{opacity: 1;transform: translateY(0); }
+   75%{opacity:0.1; transform: translateY(15px); } 
+    to{ opacity: 0; transform: translateY(20px);}
+}
+
+.parole{
+    color: rgb(118, 162, 245);
+   
+}
+div i:nth-child(1){
+    opacity: 0;
+    margin-left: 5px;
+ position: absolute;   
+animation-name: parolealternate;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+
+animation-timing-function:ease;
+}
+
+div i:nth-child(2){
+    opacity: 0;
+    margin-left: 5px;
+    position: absolute;
+    animation-name: parolealternate;
+    animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+animation-delay: 1s;
+}
+div i:nth-child(3){
+    opacity: 0;
+    margin-left: 5px;
+    position: absolute;
+animation-name: parolealternate;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-delay: 2s;
+animation-timing-function: ease;
+}
