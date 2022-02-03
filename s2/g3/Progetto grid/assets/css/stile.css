@@ -331,21 +331,18 @@ footer a {
         display: none;
     }
 }
-@media screen and (min-width:800px) {
+@media screen and (min-width:1200px) {
    main{
        display: grid;
-       grid-template-columns:65% 30%;
+       grid-template-columns:55% 40%;
        grid-gap:5%;
        
    }
-   body{
-       
-   }
-   aside section {
-    margin-top: 50px;
+ 
+   .news{
     position: sticky;
-    top: 250px;
-z-index: 40;
-   
+    top: 350px;
+   padding-left: 10px;
+   padding-right: 10px;
 }
 }
