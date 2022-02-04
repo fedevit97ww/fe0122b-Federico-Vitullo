@@ -44,7 +44,7 @@ header nav ul {
 
 ul li {
     display: inline-block;
-    font-size: 0.5em;
+    font-size: 0.7em;
     position: relative;
     top: -1vh;
 }
@@ -96,15 +96,17 @@ main p {
 .first span {
     text-transform: uppercase;
 }
-.buttonblu{
-    
+
+.buttonblu {
+
     background: linear-gradient(40deg, rgba(108, 193, 226, 1) 27%, rgba(57, 47, 122, 1) 91%);
     padding: 12px;
     text-decoration: none;
     color: white;
-    
+
 }
-.buttongrey{
+
+.buttongrey {
     color: grey;
     text-decoration: none;
     margin-right: 10px;
@@ -247,11 +249,13 @@ i {
 .imgwwa {
     text-align: center;
     padding: 20px;
-    
+
 }
-.wwacont div:nth-child(2){
+
+.wwacont div:nth-child(2) {
     margin-right: 50px;
 }
+
 .imgwwa img {
     width: 400px;
     height: 260px;
@@ -334,226 +338,267 @@ tfoot {
 }
 
 /* RESPONSIVE */
-@media screen and (min-width:768px){
-    header{
-display: flex;
-padding: 20px;
-justify-content: space-between;
-}
-header nav{
-    margin-top: 20px;
-}
+@media screen and (min-width:768px) {
+    header {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    header nav {
+        margin-top: 20px;
+    }
 
 
-header nav ul{
+    header nav ul {
         position: static;
         display: inline;
 
 
     }
-    nav ul li{
+
+    nav ul li {
         font-size: 1rem;
     }
-    .btnMenu, .iconmenu, .fa-ellipsis-h{
+
+    .btnMenu,
+    .iconmenu,
+    .fa-ellipsis-h {
         display: none;
     }
-    .table1{
+
+    .table1 {
         display: none;
     }
-   
+
     .first h1 {
-font-size: 2.8rem;
-margin:40px;
-margin-left: 60px;
-    }
-    .first p{
-        font-size: 1.4rem;
-        margin:40px;
+        font-size: 2.8rem;
+        margin: 40px;
         margin-left: 60px;
-        
     }
-    .first a{
+
+    .first p {
+        font-size: 1.4rem;
+        margin: 40px;
+        margin-left: 60px;
+
+    }
+
+    .first a {
         display: inline-block;
         margin-left: 60px;
         margin-bottom: 20px;
     }
-    .befcont h2{
-        font-size:2.4rem;
+
+    .befcont h2 {
+        font-size: 2.4rem;
     }
-    .befcont p{
+
+    .befcont p {
         line-height: 1;
         font-size: 1.2rem;
     }
-   .contdiv{
-       display: flex;
-       font-size: 1.4rem;
-       
-   }
-   
-   .contdiv p{
-       text-align: left;
-       margin-left: 20px;
-       font-size: 1rem;
-   }
-   .blu{
-       font-size:2rem;
-   }
-   .blu p{
-       font-size: 1.4rem;
-   }
-   
-   .pcandtitles{
-       display: grid;
-       width: 90vw;
-       grid-template-columns: 45% 45%;
-       grid-template-rows:150px 150px 150px;
-       margin-bottom: 50px;
-      justify-content: space-between;
-      
-   }
-   .pcandtitles div:nth-child(1){
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.pcandtitles div:nth-child(2){
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.pcandtitles div:nth-child(3){
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start:2;
-    grid-row-end: 3;
-}
-.pcandtitles div:nth-child(4){
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-   .texticon{
-       margin-left: 50px;
-   }
-  .wwacont{
-text-align: center;
 
-   }
-   
-   
-   
-footer{
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 150px 150px 150px;
-    
-}
-footer p{
-    grid-column-start: 2;
-    grid-column-end:3 ;
-    grid-row-start: 2; /*chiedere come procedere*/
-    grid-row-end: 3;
-    font-size: 1.2rem;
-}
-.good{
-    width: 30vw;
-}
-#email{
-    width: 29vw;
-}
-footer div {
-    margin-right: 20px;
-}
-.wwacont{
-    display:flex;
-}
-form button{
-    width: 30vw;
-}
-.contmain{
-    display: flex;
-    font-size: 1.5rem;
-    
-}
-#nome, #mailcontact, #presentazione{
-    width: 40vw;
-   
-}
-.send{
-    width: 20vw;
-    height: 6vh;
-    margin-left: 120px;
-}
-.send strong{
-    font-size: 1rem;
+    .contdiv {
+        display: flex;
+        font-size: 1.4rem;
+
+    }
+
+    .contdiv p {
+        text-align: left;
+        margin-left: 20px;
+        font-size: 1rem;
+    }
+
+    .blu {
+        font-size: 2rem;
+    }
+
+    .blu p {
+        font-size: 1.4rem;
+    }
+
+    .pcandtitles {
+        display: grid;
+        width: 90vw;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 150px 150px 150px;
+        margin-bottom: 50px;
+        justify-content: space-between;
+
+    }
+
+    .pcandtitles div:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .pcandtitles div:nth-child(2) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .pcandtitles div:nth-child(3) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .pcandtitles div:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .texticon {
+        margin-left: 50px;
+    }
+
+    .wwacont {
+        text-align: center;
+
+    }
+
+
+
+    footer {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 150px 150px 150px;
+
+    }
+
+    footer p {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        /*chiedere come procedere*/
+        grid-row-end: 3;
+        font-size: 1.2rem;
+    }
+
+    .good {
+        width: 30vw;
+    }
+
+    #email {
+        width: 29vw;
+    }
+
+    footer div {
+        margin-right: 20px;
+    }
+
+    .wwacont {
+        display: flex;
+    }
+
+    form button {
+        width: 30vw;
+    }
+
+    .contmain {
+        display: flex;
+        font-size: 1.5rem;
+
+    }
+
+    #nome,
+    #mailcontact,
+    #presentazione {
+        width: 40vw;
+
+    }
+
+    .send {
+        width: 20vw;
+        height: 6vh;
+        margin-left: 120px;
+    }
+
+    .send strong {
+        font-size: 1rem;
+    }
+
+    .contsede {
+        font-size: 1rem;
+        margin-top: 140px;
+
+    }
+
+    .contsede h2 {
+        font-size: 2rem;
+    }
+
+    .contsede p {
+        font-size: 1rem;
+    }
+
+    .h1cont {
+        margin-left: 300px;
+        margin-bottom: 50px;
+    }
 }
 
-.contsede{
-    font-size:1rem;
-    margin-top: 140px;
-   
-}
-.contsede h2{
-    font-size: 2rem;
-}
-.contsede p{
-    font-size: 1rem;
-}
-.h1cont{
-   margin-left: 300px;
-   margin-bottom: 50px;
-}
-}
-.buttonblu:hover{
+.buttonblu:hover {
     transform: scale(1.3);
     transition-duration: 2s;
-    
+
     box-shadow: 3px 3px 3px 3px rgb(25, 25, 27);
 }
+
 @media screen and (min-width:1200px) {
-    .pcandtitles{
+    .pcandtitles {
         display: grid;
         width: 100vw;
         grid-template-columns: 17% 17% 17% 17% 17% 17%;
-        grid-template-rows:150px 150px 150px;
+        grid-template-rows: 150px 150px 150px;
         margin-bottom: 50px;
         text-align: left;
-      
-       
+
+
     }
-    .pcandtitles div:nth-child(1){
-     grid-column-start: 2;
-     grid-column-end: 4;
-     grid-row-start: 1;
-     grid-row-end: 3;
-     margin-right: 100px;
- }
- .pcandtitles div:nth-child(2){
-     grid-column-start: 4;
-     grid-column-end: 6;
-     grid-row-start: 1;
-     grid-row-end: 2;
- }
- .pcandtitles div:nth-child(3){
-     grid-column-start: 4;
-     grid-column-end: 6;
-     grid-row-start:2;
-     grid-row-end: 3;
- }
- .pcandtitles div:nth-child(4){
-     grid-column-start: 4;
-     grid-column-end: 6;
-     grid-row-start: 3;
-     grid-row-end: 4;
- }
+
+    .pcandtitles div:nth-child(1) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-right: 100px;
+    }
+
+    .pcandtitles div:nth-child(2) {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .pcandtitles div:nth-child(3) {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .pcandtitles div:nth-child(4) {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
 }
 
-@media screen and (max-width:768px){
-    .table2{
+@media screen and (max-width:768px) {
+    .table2 {
         display: none;
     }
 }
