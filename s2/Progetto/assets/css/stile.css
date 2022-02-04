@@ -237,9 +237,7 @@ i {
     font-size: 3.5rem;
     margin-top: 30px;
 }
-.chisiamo{
-    text-align: center;
-}
+
 .chisiamo p {
     margin-top: 30px;
     text-shadow: none;
@@ -346,6 +344,7 @@ header nav{
     margin-top: 20px;
 }
 
+
 header nav ul{
         position: static;
         display: inline;
@@ -358,7 +357,9 @@ header nav ul{
     .btnMenu, .iconmenu, .fa-ellipsis-h{
         display: none;
     }
-    
+    .table1{
+        display: none;
+    }
    
     .first h1 {
 font-size: 2.8rem;
@@ -550,8 +551,9 @@ form button{
      grid-row-end: 4;
  }
 }
-.chisiamo main{
-    margin-right: 50px;
-    margin-left: 50px;
-    text-align: center;
+
+@media screen and (max-width:768px){
+    .table2{
+        display: none;
+    }
 }
