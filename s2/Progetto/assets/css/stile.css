@@ -437,6 +437,13 @@ margin-left: 60px;
    .texticon{
        margin-left: 50px;
    }
+  .wwacont{
+text-align: center;
+
+   }
+   
+   
+   
 footer{
     display: grid;
     justify-content: space-between;
@@ -505,4 +512,46 @@ form button{
     transition-duration: 2s;
     
     box-shadow: 3px 3px 3px 3px rgb(25, 25, 27);
+}
+@media screen and (min-width:1200px) {
+    .pcandtitles{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 17% 17% 17% 17% 17% 17%;
+        grid-template-rows:150px 150px 150px;
+        margin-bottom: 50px;
+        text-align: left;
+      
+       
+    }
+    .pcandtitles div:nth-child(1){
+     grid-column-start: 2;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 3;
+     margin-right: 100px;
+ }
+ .pcandtitles div:nth-child(2){
+     grid-column-start: 4;
+     grid-column-end: 6;
+     grid-row-start: 1;
+     grid-row-end: 2;
+ }
+ .pcandtitles div:nth-child(3){
+     grid-column-start: 4;
+     grid-column-end: 6;
+     grid-row-start:2;
+     grid-row-end: 3;
+ }
+ .pcandtitles div:nth-child(4){
+     grid-column-start: 4;
+     grid-column-end: 6;
+     grid-row-start: 3;
+     grid-row-end: 4;
+ }
+}
+.chisiamo main{
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
 }
