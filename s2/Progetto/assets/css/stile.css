@@ -1,0 +1,507 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+    font-size: 100%;
+
+}
+
+body {
+    color: black;
+
+    font-size: 1.5rem;
+    font-family: 'Fira Sans';
+    line-height: 1.8;
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+    background-color: white;
+
+    box-shadow: 1px 6px 5px -3px #d3d3d3;
+}
+
+header img {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/*menu hamburger*/
+
+header nav ul {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: right 1s ease-out;
+    width: 50vw;
+    height: auto;
+    z-index: 1;
+    list-style-type: none;
+    padding: 20px;
+
+}
+
+
+
+ul li {
+    display: inline-block;
+    font-size: 0.5em;
+    position: relative;
+    top: -1vh;
+}
+
+.btnMenu {
+    display: none;
+}
+
+.btnMenu:checked~nav ul {
+    right: 0;
+}
+
+.icoMenu {
+    position: absolute;
+    top: 4vh;
+    right: 5vw;
+    z-index: 2;
+    color: red;
+}
+
+
+/* MAIN */
+
+main .first {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+    color: rgba(255, 254, 254, 0.925);
+    text-shadow: 0px 1px 2px black;
+
+}
+
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    text-shadow: 0px 1px 2px black;
+}
+
+main p {
+
+    font-size: 0.7em;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.first span {
+    text-transform: uppercase;
+}
+.buttonblu{
+    
+    background: linear-gradient(40deg, rgba(108, 193, 226, 1) 27%, rgba(57, 47, 122, 1) 91%);
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    
+}
+.buttongrey{
+    color: grey;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.befcont {
+    padding: 20px;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 2.9rem;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+}
+
+p {
+    font-size: 1.3rem;
+
+}
+
+.contdiv {
+    text-align: center;
+}
+
+.contdiv h3 {
+    font-size: 2.2rem;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.contdiv div {
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+
+}
+
+.blu {
+    text-align: center;
+    margin-top: 25px;
+    background-color: rgb(18, 18, 110);
+    padding: 50px;
+    color: white;
+}
+
+.blu h2 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.blu p {
+    margin-bottom: 20px;
+}
+
+.pcandtitles {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.pcandtitles h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+
+}
+
+/* FOOTER */
+footer {
+    text-align: left;
+    padding: 25px;
+    background-color: rgb(211, 206, 206);
+}
+
+footer h3 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#email {
+    width: 79vw;
+
+    height: 5vh;
+    margin-top: 15px;
+}
+
+fieldset button {
+    background: rgb(108, 193, 226);
+    background: linear-gradient(40deg, rgba(108, 193, 226, 1) 27%, rgba(57, 47, 122, 1) 91%);
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 80vw;
+
+    margin-bottom: 25px;
+
+}
+
+strong {
+    font-size: 1.4rem;
+}
+
+footer p {
+    font-size: 1.4rem;
+}
+
+i {
+
+    color: red;
+}
+
+/*chi siamo class*/
+.wwa {
+    text-align: center;
+    padding: 30px;
+    font-weight: normal;
+
+}
+
+.wwa h1 {
+    text-shadow: none;
+    font-size: 3.5rem;
+    margin-top: 30px;
+}
+.chisiamo{
+    text-align: center;
+}
+.chisiamo p {
+    margin-top: 30px;
+    text-shadow: none;
+    font-size: 1.3rem;
+}
+
+.imgwwa {
+    text-align: center;
+    padding: 20px;
+    
+}
+.wwacont div:nth-child(2){
+    margin-right: 50px;
+}
+.imgwwa img {
+    width: 400px;
+    height: 260px;
+
+
+}
+
+.tablecont {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.tablecont h2 {
+    font-size: 2rem;
+    margin-top: 25px;
+}
+
+table {
+    width: 90vw;
+    text-align: left;
+    margin-bottom: 35px;
+    margin-left: 20px;
+}
+
+th {
+    font-weight: bolder;
+    margin-left: 10px;
+    font-size: 1.2rem;
+
+
+}
+
+thead,
+tfoot {
+    background-color: rgb(151, 179, 190);
+
+}
+
+/*contatti class*/
+.h1cont {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#nome,
+#mailcontact {
+    width: 80vw;
+    height: 5vh;
+    font-style: italic;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border: 2px solid grey;
+    box-shadow: -4px 0px 17px -12px #000000;
+}
+
+#presentazione {
+    width: 80vw;
+    font-size: 1rem;
+    font-style: italic;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: 2px solid grey;
+    box-shadow: -4px 0px 17px -12px #000000;
+}
+
+.send {
+    margin-left: 90px;
+    width: 50vw;
+}
+
+.contsede {
+    text-align: center;
+    padding: 12px;
+}
+
+.contsede p {
+    font-size: 0.9em;
+
+}
+
+/* RESPONSIVE */
+@media screen and (min-width:768px){
+    header{
+display: flex;
+padding: 20px;
+justify-content: space-between;
+}
+header nav{
+    margin-top: 20px;
+}
+
+header nav ul{
+        position: static;
+        display: inline;
+
+
+    }
+    nav ul li{
+        font-size: 1rem;
+    }
+    .btnMenu, .iconmenu, .fa-ellipsis-h{
+        display: none;
+    }
+    
+   
+    .first h1 {
+font-size: 2.8rem;
+margin:40px;
+margin-left: 60px;
+    }
+    .first p{
+        font-size: 1.4rem;
+        margin:40px;
+        margin-left: 60px;
+        
+    }
+    .first a{
+        display: inline-block;
+        margin-left: 60px;
+        margin-bottom: 20px;
+    }
+    .befcont h2{
+        font-size:2.4rem;
+    }
+    .befcont p{
+        line-height: 1;
+        font-size: 1.2rem;
+    }
+   .contdiv{
+       display: flex;
+       font-size: 1.4rem;
+       
+   }
+   
+   .contdiv p{
+       text-align: left;
+       margin-left: 20px;
+       font-size: 1rem;
+   }
+   .blu{
+       font-size:2rem;
+   }
+   .blu p{
+       font-size: 1.4rem;
+   }
+   
+   .pcandtitles{
+       display: grid;
+       width: 90vw;
+       grid-template-columns: 45% 45%;
+       grid-template-rows:150px 150px 150px;
+       margin-bottom: 50px;
+      justify-content: space-between;
+      
+   }
+   .pcandtitles div:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.pcandtitles div:nth-child(2){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.pcandtitles div:nth-child(3){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end: 3;
+}
+.pcandtitles div:nth-child(4){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+   .texticon{
+       margin-left: 50px;
+   }
+footer{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 150px 150px 150px;
+    
+}
+footer p{
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-start: 2; /*chiedere come procedere*/
+    grid-row-end: 3;
+}
+.good{
+    width: 30vw;
+}
+#email{
+    width: 29vw;
+}
+footer div {
+    margin-right: 20px;
+}
+.wwacont{
+    display:flex;
+}
+form button{
+    width: 30vw;
+}
+.contmain{
+    display: flex;
+    font-size: 1.5rem;
+    
+}
+#nome, #mailcontact, #presentazione{
+    width: 40vw;
+   
+}
+.send{
+    width: 20vw;
+    height: 6vh;
+    margin-left: 120px;
+}
+.send strong{
+    font-size: 1rem;
+}
+
+.contsede{
+    font-size:1rem;
+    margin-top: 140px;
+   
+}
+.contsede h2{
+    font-size: 2rem;
+}
+.contsede p{
+    font-size: 1rem;
+}
+.h1cont{
+   margin-left: 300px;
+   margin-bottom: 50px;
+}
+}
+.buttonblu:hover{
+    transform: scale(1.3);
+    transition-duration: 2s;
+    
+    box-shadow: 3px 3px 3px 3px rgb(25, 25, 27);
+}
