@@ -449,6 +449,7 @@ footer p{
     grid-column-end:3 ;
     grid-row-start: 2; /*chiedere come procedere*/
     grid-row-end: 3;
+    font-size: 1.2rem;
 }
 .good{
     width: 30vw;
