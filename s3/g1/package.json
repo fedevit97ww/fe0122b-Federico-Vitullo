@@ -1,0 +1,14 @@
+{
+  "name": "g1",
+  "version": "1.0.0",
+  "description": "Esercizio g1s3",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/style.scss assets/css/style.css -w"
+  },
+  "author": "Federico Vitullo",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
