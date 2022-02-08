@@ -1,0 +1,15 @@
+{
+  "name": "g2",
+  "version": "1.0.0",
+  "description": "Lavorog2s3",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/stile.scss assets/css/stile.css -w"
+  },
+  "author": "Federico Vitullo",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^17.4.0",
+    "node-sass": "^7.0.1"
+  }
+}
