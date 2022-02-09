@@ -1,0 +1,40 @@
+.container{
+    text-align: center;
+   
+    
+}
+.es1 div{
+background-color: blue;
+color: white;
+border: 3px solid black;
+
+}
+.es2 div{
+    background-color: yellow;
+    color: black;
+    border: 3px solid black;
+}
+.es3 div{
+    background-color: green;
+    color: white;
+    border: 3px solid black;
+}
+.es4 div{
+    background-color: red;
+    color: white;
+    border: 3px solid black;
+}
+.es5 div{
+    background-color: rgb(30, 102, 184);
+    color: white;
+    border: 3px solid black;
+}
+.nido div{
+    background-color: gray;
+    border: 1px solid black;
+}
+.es6 div{
+    background-color:black;
+    color: white;
+    border: 3px solid black;
+}
