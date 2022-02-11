@@ -1,0 +1,143 @@
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 35px; }
+
+.contmain {
+  margin: auto; }
+
+.form {
+  font-size: 2rem;
+  margin-top: 20vh;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  margin-bottom: 20vh; }
+
+fieldset button:hover {
+  transform: scale(1.2);
+  transition-duration: 2s;
+  box-shadow: 3px 3px 3px 3px gray; }
+
+.dvsiamo {
+  margin: auto; }
+  .dvsiamo h2 {
+    text-shadow: 0 0 2px gray;
+    font-style: italic;
+    padding: 5px;
+    font-size: 2rem;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    margin-top: 50px; }
+
+.container2 h2 {
+  margin-top: 50px;
+  text-align: center; }
+
+.dvsf {
+  margin-top: 200px; }
+
+/*Mixin*/
+/*variabile*/
+main {
+  margin: auto; }
+
+.navbh {
+  box-shadow: 5px 5px 5px; }
+
+.navigation a {
+  font-size: 24px;
+  text-transform: uppercase; }
+
+#logo {
+  border-radius: 55%;
+  display: inline;
+  width: 200px;
+  height: 200px; }
+
+.bi-instagram {
+  color: palevioletred; }
+
+.bi-facebook {
+  color: #3d3dc9; }
+
+.cocktail {
+  box-shadow: 5px 5px 5px; }
+
+.dolce {
+  box-shadow: 5px 5px 5px;
+  height: 304px; }
+
+.align {
+  text-align: center; }
+  @media screen and (min-width: 1000px) {
+    .align {
+      font-size: 0.8rem; } }
+
+h1 {
+  color: white;
+  background-color: black;
+  text-shadow: 0 0 2px gray;
+  font-style: italic;
+  padding: 5px;
+  font-size: 2rem;
+  box-shadow: 5px 5px 5px black; }
+  @media screen and (min-width: 1200px) {
+    h1 {
+      margin-top: 50px; } }
+  @media screen and (max-width: 768px) {
+    h1 {
+      margin-top: 10px; } }
+
+p {
+  font-size: 1.5rem;
+  font-style: italic;
+  border: 3px solid black;
+  padding: 7px;
+  box-shadow: 4px 4px 4px black; }
+
+.forn h2 {
+  color: white;
+  background-color: black;
+  text-shadow: 0 0 2px gray;
+  font-style: italic;
+  padding: 5px;
+  font-size: 2rem;
+  box-shadow: 5px 5px 5px black;
+  text-align: center;
+  padding: 15px;
+  background-color: #bd2e2e;
+  font-style: normal; }
+
+.cards {
+  border: 1px solid black;
+  padding: 8px; }
+  .cards p {
+    border: 1px solid black; }
+
+.cardcont {
+  margin-bottom: 40px; }
+
+h5 {
+  color: #bd2e2e;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px; }
+
+@media screen and (min-width: 450px) and (max-width: 990px) {
+  .flex .testdolce {
+    order: 1; } }
+
+.scritte h5 {
+  color: red;
+  background-color: black;
+  padding: 5px;
+  box-shadow: 2px 2px 2px gray; }
+
+.scritte p {
+  background-color: white; }
+
+main a:hover {
+  transform: scale(1.2);
+  transition-duration: 2s;
+  box-shadow: 3px 3px 3px 3px gray; }

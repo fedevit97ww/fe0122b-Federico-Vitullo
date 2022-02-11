@@ -1,0 +1,16 @@
+.contmain{
+    margin: auto;
+}
+.form{
+    font-size: 2rem;
+    margin-top: 20vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-bottom: 20vh;
+}
+fieldset button:hover{
+    transform: scale(1.2);
+    transition-duration: 2s;
+    box-shadow: 3px 3px 3px 3px gray;
+
+}

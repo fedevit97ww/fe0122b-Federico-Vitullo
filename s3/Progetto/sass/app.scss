@@ -1,0 +1,120 @@
+@import "function";
+@import "footer";
+@import "contatti";
+@import "dovesiamo";
+/*Mixin*/
+@mixin titoli {
+    color: white;
+    background-color: black;
+    text-shadow: 0 0 2px gray;
+    font-style: italic;
+    padding: 5px;
+    font-size: 2rem;
+    box-shadow: 5px 5px 5px black ;
+}
+@mixin paragrafi {
+    font-size: 1.5rem;
+    font-style: italic;
+    border: 3px solid black;
+    padding: 7px;
+    box-shadow: 4px 4px 4px black ;
+}
+/*variabile*/
+$colore:palevioletred;
+main{
+    margin: auto;
+}
+.navbh{
+    box-shadow: 5px 5px 5px;
+}
+.navigation a{
+
+font-size: 24px;
+text-transform: uppercase;
+}
+#logo{
+    border-radius: 55%;
+    display: inline;
+    width: 200px;
+    height: 200px;
+}
+.bi-instagram{ 
+    
+color:palevioletred;
+
+}
+.bi-facebook{
+    color: rgb(61, 61, 201);
+}
+.cocktail{
+    box-shadow: 5px 5px 5px ;
+}
+.dolce{
+    box-shadow: 5px 5px 5px ;
+    height: 304px;
+}
+.align{
+text-align: center; 
+@media screen and (min-width:1000px){
+    font-size: 0.8rem;
+}
+
+
+}
+h1{
+    @include titoli; 
+    @media screen and (min-width:1200px) {
+        margin-top: 50px;
+    }
+    @media screen and (max-width:768px) {
+        margin-top: 10px;
+    }
+}
+p{
+    @include paragrafi;
+}
+.forn h2{
+    @include titoli;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(189, 46, 46);
+  font-style: normal;
+}
+.cards{
+    border: 1px solid black;
+    padding: 8px;
+    p{
+       border: 1px solid black;
+    }
+}
+.cardcont{
+    margin-bottom: 40px;
+}
+h5{
+    color: rgb(189, 46, 46);
+    text-align: center;
+    text-transform: uppercase;
+   padding-bottom: 10px;
+}
+.flex .testdolce{
+    @media screen and(min-width:450px) and (max-width:990px){
+        order: 1;
+    }
+
+}
+.scritte{
+h5{
+    color:contrasto($colore);
+    background-color: black;
+    padding: 5px;
+    box-shadow: 2px 2px 2px gray;
+}
+p{
+    background-color: white;
+}
+}
+main a:hover{
+    transform: scale(1.2);
+    transition-duration: 2s;
+    box-shadow: 3px 3px 3px 3px gray;
+}
