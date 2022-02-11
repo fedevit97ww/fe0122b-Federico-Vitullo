@@ -40,7 +40,7 @@ text-transform: uppercase;
 }
 .bi-instagram{ 
     
-color:palevioletred;
+color:$colore;
 
 }
 .bi-facebook{
@@ -102,7 +102,23 @@ h5{
     }
 
 }
+.carousel{
+    margin: auto;
+    position: relative;
+     text-align: center;
+ }
+  
+    .imgcar{
+         width: 70%;
+        border: 3px solid black;
+        margin-bottom: 50px;
+        box-shadow: 3px 3px 3px 3px gray ;
+     }
+ 
 .scritte{
+  
+    width: 25%;
+   
 h5{
     color:contrasto($colore);
     background-color: black;

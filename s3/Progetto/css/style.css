@@ -128,14 +128,26 @@ h5 {
   .flex .testdolce {
     order: 1; } }
 
-.scritte h5 {
-  color: red;
-  background-color: black;
-  padding: 5px;
-  box-shadow: 2px 2px 2px gray; }
+.carousel {
+  margin: auto;
+  position: relative;
+  text-align: center; }
 
-.scritte p {
-  background-color: white; }
+.imgcar {
+  width: 70%;
+  border: 3px solid black;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 3px 3px gray; }
+
+.scritte {
+  width: 25%; }
+  .scritte h5 {
+    color: red;
+    background-color: black;
+    padding: 5px;
+    box-shadow: 2px 2px 2px gray; }
+  .scritte p {
+    background-color: white; }
 
 main a:hover {
   transform: scale(1.2);
