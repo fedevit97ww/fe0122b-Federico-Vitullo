@@ -2,4 +2,7 @@
     @if (lightness($colore) > 50){
         @return red;
     }
+    @else{
+        @return blue;
+    }
 }
