@@ -40,3 +40,14 @@ border: 3px solid black;
     color: white;
     border: 3px solid black;
 }
+.xxpadre{
+    position: relative;
+
+}
+.xx{
+    position: absolute;
+    top: calc(50% - 15px);
+    height: 30px;
+    line-height: 30px;
+    width: calc(100% - 30px);
+}
