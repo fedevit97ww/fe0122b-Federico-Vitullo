@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1 javascript</title>
+</head>
+<body id="grow">
+   <h1 id="titolo">Pratica con Javascript </h1> 
+   <button onclick="changeBackcolor()" id="button1"> Clicca qui per cambiare il colore al testo</button>
+   <button onclick="changeButtonstyle()">Clicca qui per alterare il bottone</button> 
+   <button onclick="growUp()" style="margin-top: 10px;">Clicca qui per ingrandire le scritte</button>
+ <div><h2>Operazioni con Javascript </h2>
+ <p>15+18 quanto fa?</p> <br> <p id="operazioni"></p>
+</div>
+
+<button onclick="tema()">Clicca qui per cambiare il tema</button>
+<button onclick="ripristino()">Clicca qui per ripristinare i valori iniziali</button>
+
+<script>
+    var testoAlert = 'esercizio1s4';
+    alert(testoAlert);
+    
+
+    var numero1 = 15;
+    var numero2 = 18;
+    var numero3 = 10;
+    console.log((numero1 + numero2) / (numero3 + 1));
+    document.getElementById('operazioni').innerHTML = (numero1 + numero2);
+</script>
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
