@@ -2,6 +2,9 @@
 @import "footer";
 @import "contatti";
 @import "dovesiamo";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
 /*Mixin*/
 @mixin titoli {
     color: white;
