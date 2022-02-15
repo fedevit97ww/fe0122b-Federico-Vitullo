@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esg2s4</title>
+    <link rel="stylesheet" href="assets/css/stile.css">
+</head>
+
+<body>
+
+
+    <table>
+        <caption id="testotabella"></caption>
+        <thead>
+            <tr>
+                <th>Ore di studio</th>
+                <th>Matematica</th>
+                <th>Inglese</th>
+                <th>Gemoetria</th>
+        </thead>
+        <tbody>
+            </tr>
+            <tr>
+                <th>Lunedi</th>
+                <td id="dato1">5</td>
+                <td id="dato2">6</td>
+                <td id="dato3">7</td>
+            </tr>
+            <tr>
+                <th>Martedi</th>
+                <td id="dato4">2</td>
+                <td id="dato5">3</td>
+                <td id="dato6">4</td>
+            </tr>
+            <tr>
+                <th>Mercoledi</th>
+                <td id="dato7">1</td>
+                <td id="dato8">2</td>
+                <td id="dato9">5</td>
+            </tr>
+            <tr>
+                <th>Ore totali</th>
+                <td id="ris1"></td>
+                <td id="ris2"></td>
+                <td id="ris3"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <p>Per sommare i dati della tabella:</p>
+        <button
+            onclick="somma('dato1','dato4','dato7','ris1'); somma('dato2','dato5','dato8','ris2'); somma('dato3','dato6','dato9','ris3')">
+            clicca</button>
+
+        <p>La differenza di ore tra le ore di geometria e matematica è: </p>
+        <button id="btn" onclick="sottrazione()">Clicca qui per vederla</button>
+        <p id="differenza"></p>
+
+        <p id="author"></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

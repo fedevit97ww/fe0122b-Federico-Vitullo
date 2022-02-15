@@ -1,0 +1,36 @@
+th,
+td {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    text-align: center;
+}
+
+table {
+    border: 2px solid red;
+}
+
+caption {
+    border: 3px solid blue;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+div {
+    font-size: 1.5rem;
+}
+
+div button {
+    color: black;
+    font-weight: bolder;
+    background-color: red;
+    padding: 10px;
+}
+
+div #author {
+    color: red;
+    background-color: black;
+    padding: 5px;
+    display: inline-block;
+}
