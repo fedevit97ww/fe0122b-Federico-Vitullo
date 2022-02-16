@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>In questa pagina potrai scoprire quanto tempo è passato dagli eventi storici qui menzionati</h1>
+    </div>
+
+    <div>
+        <h2> Caduta del muro di Berlino</h2>
+
+        <p> 9 Novembre <span id="anno1">1989</span></p>
+        <input type="text" id="berlino" placeholder="Inserisci l'anno corrente" maxlength="4" > <button id="b1" onclick="sottrazione('berlino', 'anno1','ris1');">Scopri</button><p id="ris1"></p>
+    </div>
+    <div>
+        <h2> Caduta delle torri Gemelle</h2>
+
+        <p> 11 Settembre <span id="anno2">2001</span></p>
+        <input type="text" id="newyork" placeholder="Inserisci l'anno corrente" maxlength="4" > <button id="b2" onclick="sottrazione('newyork', 'anno2','ris2');">Scopri</button><p id="ris2"></p>
+    </div>
+    <div>
+        <h2> Invasione della Polonia</h2>
+
+        <p> 1 Settembre <span id="anno3">1939</span></p>
+        <input type="text" id="polonia" placeholder="Inserisci l'anno corrente" maxlength="4" > <button id="b3" onclick="sottrazione('polonia', 'anno3','ris3');">Scopri</button><p id="ris3"></p>
+    </div>
+
+    <h2>Inserisci la tua età per sapere se puoi accedere alle foto degli eventi</h2>
+    <form action="">
+        <input type="text" id="tuaeta">
+    </form>
+    <button onclick="controlloEta()">Clicca</button>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
