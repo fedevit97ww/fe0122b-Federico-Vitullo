@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/stile.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="tastierino">
+            <input type="text" id="display" placeholder="'Benvenuto!'">
+            <input type="button" id="7" onclick="prendiDato(7)" value="7">
+            <input type="button" id="8" onclick="prendiDato(8)" value="8">
+            <input type="button" id="9" onclick="prendiDato(9)" value="9">
+            <input type="button" id="/" onclick="prendiDato('/')" value="/">
+            <input type="button" id="4" onclick="prendiDato(4)" value="4">
+            <input type="button" id="5" onclick="prendiDato(5)" value="5">
+            <input type="button" id="6" onclick="prendiDato(6)" value="6">
+            <input type="button" id="*" onclick="prendiDato('*')" value="x">
+            <input type="button" id="1" onclick="prendiDato(1)" value="1">
+            <input type="button" id="2" onclick="prendiDato(2)" value="2">
+            <input type="button" id="3" onclick="prendiDato(3)" value="3">
+            <input type="button" id="-" onclick="prendiDato('-')" value="-">
+            <input type="button" id="c" onclick="cancella()" value="C">
+            <input type="button" id="0" onclick="prendiDato(0)" value="0">
+            <input type="button" id="." onclick="prendiDato('.')" value=".">
+            <input type="button" id="+" onclick="prendiDato('+')" value="+">
+            <input type="button" id="=" class="uguale" onclick="operazione(this.id)" value="=">
+
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
