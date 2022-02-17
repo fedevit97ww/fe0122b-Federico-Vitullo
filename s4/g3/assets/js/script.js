@@ -1,5 +1,5 @@
 function sottrazione(corrente, passato ,destinazione){
-var data = document.getElementById(corrente).value *1;
+var data = document.getElementById(corrente).value ;// non serve trasformarlo in numero
  data -= document.getElementById(passato).innerHTML *1;
  document.getElementById(destinazione).innerHTML = (data) ;
 
@@ -33,10 +33,11 @@ operazioni();
 (saluta = () => console.log('Ciao a tutti')) ();
 
 
-function controlloEta(){
-   eta = document.getElementById('tuaeta').value *1;
-riferimento = 18;
-massimo = 121;
+function controlloEta()
+{
+var eta = document.getElementById('tuaeta').value ;
+var riferimento = 18;
+var massimo = 121;
 if (eta < riferimento)  {alert('non puoi');}
 else if (eta > massimo)  {alert('stai crepando');}
 else {
