@@ -1,0 +1,38 @@
+body{
+    font-size: 1.5rem;
+}
+#tendina{
+    display: none;
+    list-style: none;
+    
+}
+#navhead{
+   
+    font-size: 1.2rem;
+    background-color: aqua;
+    color: orchid;
+    padding: 20px;
+   
+    
+}
+.links{
+    text-decoration: none;
+    background-color: orchid;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    color: aqua;
+    font-size: 1.2rem;
+    
+}
+.yellow{
+    background-color: yellow;
+}
+.dimensioni{
+    font-size: 2rem;
+}
+.underline{
+    text-decoration: solid;
+}
