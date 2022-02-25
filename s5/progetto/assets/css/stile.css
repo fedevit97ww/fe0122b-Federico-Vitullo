@@ -43,6 +43,10 @@ font-size: 2rem;
 .form-control{
     font-size: 2em;
 }
+i{
+    display: block;
+    text-align: center;
+}
 /*.modLi{
     color: red;
     text-align: center;
