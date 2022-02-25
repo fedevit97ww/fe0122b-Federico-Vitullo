@@ -1,0 +1,52 @@
+h1{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+
+    border: 1px solid red;
+  
+}
+nav a{
+    text-align: center;
+}
+
+ 
+.inp{
+    margin:auto;
+}
+.modLi{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    font-size: 1.5em;
+    border: 2px solid red;
+   
+}
+
+.list-group:hover{
+    cursor: pointer;
+}
+.bi-plus-square-fill{
+    font-size: 4em;
+    color: black;
+}
+.bi-plus-square-fill{
+    cursor: pointer;
+}
+.bi-card-checklist{
+font-size: 2rem;
+}
+.form-control{
+    font-size: 2em;
+}
+/*.modLi{
+    color: red;
+    text-align: center;
+}
+.list-group{
+   background-color: black;
+}*/
