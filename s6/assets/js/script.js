@@ -62,18 +62,18 @@
    
     function riconosce(campo){
         if($(campo).val() == ''){
-            $(campo).next().text('campo non compilato')
+            $(campo).next().text('* campo obbligatorio')
             control = false;
 
         }else{
-            $(campo).next().text("");
+            $(campo).next().text("Campo corretto");
         };
 
    };
    
-   let arrayy = $("#nome, #email-1, #email-2");
+   let arrayN = $("#nome, #email-1, #email-2");
 
-   arrayy.each((indice,element) => {
+   arrayN.each((indice,element) => {
        riconosce(element);
 
    });
