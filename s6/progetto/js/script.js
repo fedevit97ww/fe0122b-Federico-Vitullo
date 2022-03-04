@@ -1,13 +1,10 @@
 $(() =>{
-   
-
        const mieImg =["pokemon","mushroom","console","supermario","carnivora","pikachu","missile","dratini","pokemon","mushroom","console","supermario","carnivora","pikachu","missile","dratini"]
 
     for (let i = 0; i < 16; i++) {
 
         let immagineRandom = Math.floor(Math.random() * mieImg.length);
         let immagineEliminata = mieImg.splice(immagineRandom, 1);
-
 
         $("#memory").append('<div class="images" id="emoji'+i+'"><img id="'+i+'" src="img/'+immagineEliminata+'.png"  width="130" height="130"></div>')
     }
@@ -25,10 +22,11 @@ $(() =>{
 
 
         $("#clicks").text(clicks);
-        if(clicks > 45){
+        if(clicks > 44){
             $('#vittoria').text('LOSER!!')
+            $('#reset').css('display','block')
         }
-        if(immaginiCliccate.length < 2 && clicks < 45){
+        if(immaginiCliccate.length < 2 && clicks < 44){
             
             let imgId = $(this).children().attr('id');
             let imgSrc = $(this).children().attr('src');
