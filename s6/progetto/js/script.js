@@ -44,8 +44,8 @@ $(() =>{
              
                 if(immaginiCliccate[0].src == immaginiCliccate[1].src){
                     
-                    $('#' + immaginiCliccate[0].id).parent().css("background-color","transparent")
-                    $('#' + immaginiCliccate[1].id).parent().css("background-color","transparent")
+                    $('#' + immaginiCliccate[0].id).parent().css({"background-color":"transparent", "boxShadow": "none"})
+                    $('#' + immaginiCliccate[1].id).parent().css({"background-color":"transparent", "boxShadow": "none"})
                     immaginiCliccate = [];
                     finish++;
                 }else{
