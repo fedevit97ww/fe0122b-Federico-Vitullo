@@ -22,10 +22,12 @@ var SonAccount = /** @class */ (function () {
     }
     SonAccount.prototype.oneDeposit = function (num) {
         this.versamenti.push(num);
+        console.log(this.versamenti);
         return this.saldo += num;
     };
     SonAccount.prototype.oneWithDraw = function (num) {
         this.prelievi.push(num);
+        console.log(this.prelievi);
         return this.saldo -= num;
     };
     return SonAccount;
@@ -37,7 +39,7 @@ var MotherAccount = /** @class */ (function (_super) {
         return _super.call(this, saldo) || this;
     }
     MotherAccount.prototype.interests = function () {
-        return (this.saldo / 100) * 10;
+        return Math.round((this.saldo / 100) * 10);
     };
     MotherAccount.prototype.addInterests = function () {
         return this.saldo += this.interests();
@@ -61,19 +63,31 @@ prel.addEventListener('click', function () {
     getPrel(figlio);
     saldoCorrente.placeholder = figlio.saldo;
 });
+//fine ogg figlio
 //istruzioni ogg madre
 var saldoCorrenteM = document.querySelector('#saldoCorrenteM');
 saldoCorrenteM.placeholder = madre.saldo;
+var int = document.querySelector('#interessi');
+int.innerHTML = madre.interests();
+var saldofinale = document.getElementById('saldofinale');
+saldofinale.innerHTML = "Saldo pi\u00F9 interessi : ".concat(madre.addInterests());
 var versaM = document.getElementById('versaM');
 versaM.addEventListener('click', function () {
     getVers(madre);
     saldoCorrenteM.placeholder = madre.saldo;
+    var int = document.querySelector('#interessi');
+    int.innerHTML = madre.interests();
+    saldofinale.innerHTML = "Saldo pi\u00F9 interessi : ".concat(madre.saldo + madre.interests());
 });
 var prelM = document.getElementById('prelevaM');
 prelM.addEventListener('click', function () {
     getPrel(madre);
     saldoCorrenteM.placeholder = madre.saldo;
+    var int = document.querySelector('#interessi');
+    int.innerHTML = madre.interests();
+    saldofinale.innerHTML = "Saldo pi\u00F9 interessi : ".concat(madre.saldo + madre.interests());
 });
+//fine ogg madre
 //funzione per prendere il valore nell'input di versamento
 function getVers(el) {
     if (el == figlio) {
