@@ -1,9 +1,5 @@
 //superclass
 
-/* versamenti : object = {
-    versamento = soldi versati,
-    data = new Date
-}*/
 class SonAccount {
     saldo: number;
     prelievi: number[] = [];
@@ -15,7 +11,6 @@ class SonAccount {
         this.versamenti.push(num)
         console.log(this.versamenti)
         return this.saldo += num;
-        
     }
     oneWithDraw(num: number): number {
         this.prelievi.push(num)
