@@ -13,6 +13,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+//superclass
 var SonAccount = /** @class */ (function () {
     function SonAccount(saldo) {
         this.prelievi = [];
@@ -29,6 +30,7 @@ var SonAccount = /** @class */ (function () {
     };
     return SonAccount;
 }());
+//sottoclasse
 var MotherAccount = /** @class */ (function (_super) {
     __extends(MotherAccount, _super);
     function MotherAccount(saldo) {
@@ -42,30 +44,63 @@ var MotherAccount = /** @class */ (function (_super) {
     };
     return MotherAccount;
 }(SonAccount));
-//let moneyPlus= document.querySelector('#versamento')
+//oggetti
 var figlio = new SonAccount(2000);
-var saldoCorrente = document.querySelector('#saldoCorrente');
-saldoCorrente.value = figlio.saldo;
-var versa = document.getElementById('versa');
-function getVal() {
-    console.log('ciao');
-    var num = Number(document.getElementById("versa").value);
-    console.log(num);
-    figlio.oneDeposit(num);
-    console.log(figlio.saldo);
-}
-versa.addEventListener('click', getVal);
 var madre = new MotherAccount(1000);
-//console.log(figlio.oneDeposit(100))
-console.log(figlio.saldo);
-console.log(madre.addInterests());
-console.log(madre.saldo);
-console.log(madre.addInterests());
-console.log(madre.oneWithDraw(200));
-console.log(madre.addInterests());
-console.log(madre.oneDeposit(1800));
-console.log(madre.oneDeposit(800));
-console.log(madre.saldo);
-console.log(madre.interests());
-console.log(figlio.versamenti);
-console.log(madre.versamenti);
+//
+//istruzioni ogg figlio
+var saldoCorrente = document.querySelector('#saldoCorrente');
+saldoCorrente.placeholder = figlio.saldo;
+var versa = document.getElementById('versa');
+versa.addEventListener('click', function () {
+    getVers(figlio);
+    saldoCorrente.placeholder = figlio.saldo;
+});
+var prel = document.getElementById('preleva');
+prel.addEventListener('click', function () {
+    getPrel(figlio);
+    saldoCorrente.placeholder = figlio.saldo;
+});
+//istruzioni ogg madre
+var saldoCorrenteM = document.querySelector('#saldoCorrenteM');
+saldoCorrenteM.placeholder = madre.saldo;
+var versaM = document.getElementById('versaM');
+versaM.addEventListener('click', function () {
+    getVers(madre);
+    saldoCorrenteM.placeholder = madre.saldo;
+});
+var prelM = document.getElementById('prelevaM');
+prelM.addEventListener('click', function () {
+    getPrel(madre);
+    saldoCorrenteM.placeholder = madre.saldo;
+});
+//funzione per prendere il valore nell'input di versamento
+function getVers(el) {
+    if (el == figlio) {
+        var campoV = document.getElementById("versamento");
+        var campoVal = Number(campoV.value);
+        el.oneDeposit(campoVal);
+        campoV.value = '';
+    }
+    else if (el == madre) {
+        var campoV = document.getElementById("versamentoM");
+        var campoVal = Number(campoV.value);
+        el.oneDeposit(campoVal);
+        campoV.value = '';
+    }
+}
+// per prendere il valore nell'input di prelievo
+function getPrel(el) {
+    if (el == figlio) {
+        var campoV = document.getElementById("prelievo");
+        var campoVal = Number(campoV.value);
+        el.oneWithDraw(campoVal);
+        campoV.value = '';
+    }
+    else if (el == madre) {
+        var campoV = document.getElementById("prelievoM");
+        var campoVal = Number(campoV.value);
+        el.oneWithDraw(campoVal);
+        campoV.value = '';
+    }
+}

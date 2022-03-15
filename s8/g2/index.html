@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-    <input type="text" placeholder="" id="saldoCorrente">
-    
-    <input type="number" id="versamento"> 
+    <h2>Conto figlio</h2>
+    <label for="saldoCorrente">Saldo attuale</label>
+    <input type="text" placeholder="" id="saldoCorrente" disabled>
+
+    <input type="number" id="versamento">
     <button id="versa">Versa</button>
 
-    <input type="number" id="prelievo"> 
+    <input type="number" id="prelievo">
     <button id="preleva">Preleva</button>
+ 
+
+    <h2>Conto Madre</h2>
+    <label for="saldoCorrenteM">Saldo attuale</label>
+    <input type="text" placeholder="" id="saldoCorrenteM" disabled>
+
+    <input type="number" id="versamentoM">
+    <button id="versaM">Versa</button>
+
+    <input type="number" id="prelievoM">
+    <button id="prelevaM">Preleva</button>
+    
+    
 
     <script src="script.js"></script>
 </body>
+
 </html>
