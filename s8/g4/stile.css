@@ -1,0 +1,62 @@
+
+h3{
+    text-align: center;
+}
+#telefono1{
+    position: absolute;
+    right: 80%;
+    top:30%;
+    border: 2px solid black;
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+}
+p{
+    text-align: center;
+}
+#telefono2{
+    position: absolute;
+    right: 47.5%;
+    top:30%;
+    border: 2px solid black;
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    }
+#telefono3{
+    position: absolute;
+    right: 10%;
+    top:30%;
+    border: 2px solid black;
+    width: 200px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.bi-telephone{
+font-size: 2em;
+margin-right: 20px;
+position: relative;
+top:50%;
+
+}
+.bi-plus-square-fill{
+font-size: 2em;
+position: relative;
+left: 40%;
+top:50%;
+}
+.bi-info-circle{ 
+font-size: 2em;
+position: relative;
+left:10%;
+top:28%;
+}
+.bi-trash{
+font-size: 2em;
+position: relative;
+left:10%;
+top:15%;
+}
