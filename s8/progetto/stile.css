@@ -20,7 +20,7 @@ body::before{
   #wrapper{
       z-index: 1000;
       width: 70%;
-      height: 65%;
+      height: 75%;
       background-color: rgb(255, 255, 255);
       box-shadow: 1px 1px 5px gray;
       border-radius: 10px;
@@ -34,9 +34,16 @@ body::before{
   
   #vestiti{
       padding: 10px;
+      font-size: 1.5em;
   }
   
   #vestiti option{
       font-size: 20px;
       font-weight: bold;
+  }
+  p{
+      font-size: 1.3em;
+  }
+  button{
+      padding: 12px;
   }
