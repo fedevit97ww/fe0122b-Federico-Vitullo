@@ -66,12 +66,10 @@ class Abbigliamento {
         return Number((this.getSaldocapo() * 1.22).toFixed(2))
     }
 }
-
+//oggetti creati post richiesta get
 let vestito = new Abbigliamento(6, 1727, 'estate', 'canotta', 1245, 6, 'bianco', 100, 122, 'negozio', 10)
 let vestito2 = new Abbigliamento(7, 8712, 'autunno', 'cappello', 8945, 7, 'verde', 10, 12, 'magazzino', 8)
 let vestito3 = new Abbigliamento(8, 9832, 'inverno', 'sciarpa', 1597, 6, 'giallo', 20, 24.4, 'negozio', 10)
-
-
 
 //var globali
 var select: any = document.querySelector('#vestiti')
