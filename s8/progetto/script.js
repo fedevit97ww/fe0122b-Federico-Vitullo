@@ -50,6 +50,16 @@ var vestito2 = new Abbigliamento(7, 8712, 'autunno', 'cappello', 8945, 7, 'verde
 var vestito3 = new Abbigliamento(8, 9832, 'inverno', 'scarpe', 1597, 6, 'giallo', 20, 24.4, 'negozio', 10);
 //var globali
 var select = document.querySelector('#vestiti');
+var scontato = document.querySelector('#scontato');
+var sconto = document.querySelector('.btn-primary');
+var saldo = document.querySelector('#saldo');
+var disponibile = document.querySelector('#disponibile');
+var ivaInclusa = document.querySelector('#ivaInclusa');
+var colore = document.querySelector('#colore');
+var collect = document.querySelector('#collezione');
+var capo = document.querySelector('#capo');
+var quantita = document.querySelector('#quantita');
+var foto = document.querySelector('#immagineAutoSelezionata');
 ///funzioni
 function populateSelectOptions(p) {
     for (var i = 0; i < p.length; i++) {
@@ -60,33 +70,36 @@ function populateSelectOptions(p) {
     }
     select.addEventListener('change', function mostraVestiti() {
         var idVestito = select.value;
-        //let autoSelezionata = veicoli.find(auto => auto.id == idAutoSel)
         var vestitoSel;
-        for (var i = 0; i < p.length; i++) {
-            if (p[i].id == idVestito) {
-                vestitoSel = p[i];
-            }
-        }
-        var collect = document.querySelector('#collezione');
-        collect.innerText = vestitoSel.collezione.toUpperCase();
-        var capo = document.querySelector('#capo');
-        capo.innerText = vestitoSel.capo.toUpperCase();
-        var quantita = document.querySelector('#quantita');
-        quantita.innerText = vestitoSel.quantita;
-        var colore = document.querySelector('#colore');
-        colore.innerText = vestitoSel.colore.toUpperCase();
-        var ivaInclusa = document.querySelector('#ivaInclusa');
-        ivaInclusa.innerText = vestitoSel.prezzoivainclusa + '€';
-        var disponibile = document.querySelector('#disponibile');
-        disponibile.innerText = vestitoSel.disponibile.toUpperCase();
-        var saldo = document.querySelector('#saldo');
-        saldo.innerText = vestitoSel.saldo + '%';
-        var scontato = document.querySelector('#scontato');
-        var sconto = document.querySelector('.btn-primary');
         sconto.addEventListener('click', function () {
             scontato.innerText = vestitoSel.getAcquistoCapo() + '€';
         });
-        var foto = document.querySelector('#immagineAutoSelezionata');
-        foto === null || foto === void 0 ? void 0 : foto.setAttribute('src', 'img/' + vestitoSel.codprod + '.png');
+        try {
+            for (var i = 0; i < p.length; i++) {
+                if (p[i].id == idVestito) {
+                    vestitoSel = p[i];
+                }
+            }
+            collect.innerText = vestitoSel.collezione.toUpperCase();
+            capo.innerText = vestitoSel.capo.toUpperCase();
+            quantita.innerText = vestitoSel.quantita;
+            colore.innerText = vestitoSel.colore.toUpperCase();
+            ivaInclusa.innerText = vestitoSel.prezzoivainclusa + '€';
+            disponibile.innerText = vestitoSel.disponibile.toUpperCase();
+            saldo.innerText = vestitoSel.saldo + '%';
+            foto === null || foto === void 0 ? void 0 : foto.setAttribute('src', 'img/' + vestitoSel.codprod + '.png');
+            scontato.innerText = '';
+        }
+        catch (_a) {
+            collect.innerText = '';
+            capo.innerText = '';
+            quantita.innerText = '';
+            colore.innerText = '';
+            ivaInclusa.innerText = '';
+            disponibile.innerText = '';
+            saldo.innerText = '';
+            scontato.innerText = '';
+            foto === null || foto === void 0 ? void 0 : foto.setAttribute('src', '');
+        }
     });
 }

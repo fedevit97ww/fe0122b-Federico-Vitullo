@@ -5,9 +5,7 @@ fetch('Abbigliamento.json')
         risposta.forEach((item: Abbigliamento) => {
 
             var vestiti = new Abbigliamento(item.id, item.codprod, item.collezione, item.capo, item.modello, item.quantita, item.colore, item.prezzoivaesclusa, item.prezzoivainclusa, item.disponibile, item.saldo);
-
             contVestiti.push(vestiti)
-
             console.log(vestiti);
             console.log('xxxxxxxxxxxxx')
             console.log('xxxxxxxxxxxxx')
@@ -27,8 +25,6 @@ fetch('Abbigliamento.json')
         contVestiti.push(vestito3)
         //
         populateSelectOptions(contVestiti)
-
-
     })
 
 
@@ -73,10 +69,19 @@ let vestito3 = new Abbigliamento(8, 9832, 'inverno', 'scarpe', 1597, 6, 'giallo'
 
 //var globali
 var select: any = document.querySelector('#vestiti')
+let scontato: any = document.querySelector('#scontato')
+let sconto: any = document.querySelector('.btn-primary');
+let saldo: any = document.querySelector('#saldo');
+let disponibile: any = document.querySelector('#disponibile');
+let ivaInclusa: any = document.querySelector('#ivaInclusa');
+let colore: any = document.querySelector('#colore');
+let collect: any = document.querySelector('#collezione');
+let capo: any = document.querySelector('#capo');
+let quantita: any = document.querySelector('#quantita');
+let foto = document.querySelector('#immagineAutoSelezionata');
 
 ///funzioni
 function populateSelectOptions(p: any) {
-
     for (var i = 0; i < p.length; i++) {
         var option = document.createElement('option')
         option.setAttribute('value', p[i].id)
@@ -86,38 +91,37 @@ function populateSelectOptions(p: any) {
 
     select.addEventListener('change', function mostraVestiti() {
         var idVestito = select.value;
-        
-        //let autoSelezionata = veicoli.find(auto => auto.id == idAutoSel)
         var vestitoSel: any;
+        sconto.addEventListener('click', () => {
+            scontato.innerText = vestitoSel.getAcquistoCapo() + '€';
+        });
+        try{
         for (var i = 0; i < p.length; i++) {
             if (p[i].id == idVestito) {
                 vestitoSel = p[i]
             }
         }
-        let collect: any = document.querySelector('#collezione');
         collect.innerText = vestitoSel.collezione.toUpperCase();
-        let capo: any = document.querySelector('#capo');
         capo.innerText = vestitoSel.capo.toUpperCase();
-        let quantita: any = document.querySelector('#quantita');
         quantita.innerText = vestitoSel.quantita;
-        let colore: any = document.querySelector('#colore');
         colore.innerText = vestitoSel.colore.toUpperCase();
-        let ivaInclusa: any = document.querySelector('#ivaInclusa');
         ivaInclusa.innerText = vestitoSel.prezzoivainclusa + '€';
-        let disponibile: any = document.querySelector('#disponibile');
         disponibile.innerText = vestitoSel.disponibile.toUpperCase();
-        let saldo: any = document.querySelector('#saldo');
         saldo.innerText = vestitoSel.saldo + '%';
+        foto?.setAttribute('src','img/' + vestitoSel.codprod + '.png');
+        scontato.innerText = '';
 
-        let scontato: any = document.querySelector('#scontato')
-        let sconto: any = document.querySelector('.btn-primary');
-
-        sconto.addEventListener('click', () => {
-            scontato.innerText = vestitoSel.getAcquistoCapo() + '€';
-
-        });
-        let foto = document.querySelector('#immagineAutoSelezionata')
-        foto?.setAttribute('src','img/' + vestitoSel.codprod + '.png')
+     } catch{
+        collect.innerText = '';
+        capo.innerText = '';
+        quantita.innerText = '';
+        colore.innerText = '';
+        ivaInclusa.innerText = '';
+        disponibile.innerText ='';
+        saldo.innerText = '';
+        scontato.innerText = '';
+        foto?.setAttribute('src','');
+     }
     });
 
 
