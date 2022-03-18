@@ -69,7 +69,7 @@ class Abbigliamento {
 //oggetti creati post richiesta get
 let vestito = new Abbigliamento(6, 1727, 'estate', 'canotta', 1245, 6, 'bianco', 100, 122, 'negozio', 10)
 let vestito2 = new Abbigliamento(7, 8712, 'autunno', 'cappello', 8945, 7, 'verde', 10, 12, 'magazzino', 8)
-let vestito3 = new Abbigliamento(8, 9832, 'inverno', 'sciarpa', 1597, 6, 'giallo', 20, 24.4, 'negozio', 10)
+let vestito3 = new Abbigliamento(8, 9832, 'inverno', 'scarpe', 1597, 6, 'giallo', 20, 24.4, 'negozio', 10)
 
 //var globali
 var select: any = document.querySelector('#vestiti')
@@ -86,6 +86,7 @@ function populateSelectOptions(p: any) {
 
     select.addEventListener('change', function mostraVestiti() {
         var idVestito = select.value;
+        
         //let autoSelezionata = veicoli.find(auto => auto.id == idAutoSel)
         var vestitoSel: any;
         for (var i = 0; i < p.length; i++) {
@@ -110,9 +111,13 @@ function populateSelectOptions(p: any) {
 
         let scontato: any = document.querySelector('#scontato')
         let sconto: any = document.querySelector('.btn-primary');
+
         sconto.addEventListener('click', () => {
-            scontato.innerText = vestitoSel.getAcquistoCapo() + '€'
+            scontato.innerText = vestitoSel.getAcquistoCapo() + '€';
+
         });
+        let foto = document.querySelector('#immagineAutoSelezionata')
+        foto?.setAttribute('src','img/' + vestitoSel.codprod + '.png')
     });
 
 

@@ -44,9 +44,10 @@ var Abbigliamento = /** @class */ (function () {
     };
     return Abbigliamento;
 }());
+//oggetti creati post richiesta get
 var vestito = new Abbigliamento(6, 1727, 'estate', 'canotta', 1245, 6, 'bianco', 100, 122, 'negozio', 10);
 var vestito2 = new Abbigliamento(7, 8712, 'autunno', 'cappello', 8945, 7, 'verde', 10, 12, 'magazzino', 8);
-var vestito3 = new Abbigliamento(8, 9832, 'inverno', 'sciarpa', 1597, 6, 'giallo', 20, 24.4, 'negozio', 10);
+var vestito3 = new Abbigliamento(8, 9832, 'inverno', 'scarpe', 1597, 6, 'giallo', 20, 24.4, 'negozio', 10);
 //var globali
 var select = document.querySelector('#vestiti');
 ///funzioni
@@ -85,5 +86,7 @@ function populateSelectOptions(p) {
         sconto.addEventListener('click', function () {
             scontato.innerText = vestitoSel.getAcquistoCapo() + '€';
         });
+        var foto = document.querySelector('#immagineAutoSelezionata');
+        foto === null || foto === void 0 ? void 0 : foto.setAttribute('src', 'img/' + vestitoSel.codprod + '.png');
     });
 }
