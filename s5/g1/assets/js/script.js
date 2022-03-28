@@ -26,19 +26,20 @@ console.log(evento.toLocaleDateString('it-IT',options))
     document.getElementById('digital').innerHTML = `${data.getHours()}:${data.getMinutes()}:${data.getSeconds()} `
 }
 setInterval(Orologio,1000)*/
+
 //opzione2
-/*setInterval(function(){
-    var data = new Date()
-    document.getElementById('digital').innerHTML = `${data.getHours()}:${data.getMinutes()}:${data.getSeconds()} `
-},1000)*/
-
-
-//opzione3
 setInterval(function(){
     var data = new Date()
-    document.getElementById('digital').innerHTML = `${data.getHours()}:${data.getMinutes()}:${data.getSeconds()} `
+    document.getElementById('digital').innerHTML = document.getElementById('digital').innerHTML = `${data.getHours()}:${data.getMinutes()}:${data.getSeconds()} `
 },1000)
 
+
+// data.getHours() + ":" + data.getMinutes()  + ":" + data.getSeconds()
+//opzione3
+//??
+
+
 // var hour = addZero(data.getHours())
-//var minutes = addZero(data.getMinutes())
+//var minutes = addZero(data.getMinutes()) --> chiedere il funzionamento
 //var seconds = addZero(data.getSeconds())
+//`${data.getHours()}:${data.getMinutes()}:${data.getSeconds()} `

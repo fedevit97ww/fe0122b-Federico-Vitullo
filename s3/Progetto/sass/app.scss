@@ -29,15 +29,14 @@ main{
 }
 .navbh{
     box-shadow: 5px 5px 5px;
-
-position: sticky;
-top: 0vh;
-z-index: 1;
+    position: sticky;
+    top: 0vh;
+    z-index: 1;
 }
 .navigation a{
 
-font-size: 24px;
-text-transform: uppercase;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 #logo{
     border-radius: 55%;
@@ -47,7 +46,7 @@ text-transform: uppercase;
 }
 .bi-instagram{ 
     
-color:$colore;
+    color:$colore;
 
 }
 .bi-facebook{
@@ -61,7 +60,7 @@ color:$colore;
     height: 304px;
 }
 .align{
-text-align: center; 
+    text-align: center; 
 @media screen and (min-width:1000px){
     font-size: 0.8rem;
 }
@@ -85,7 +84,7 @@ p{
     text-align: center;
     padding: 15px;
     background-color: rgb(189, 46, 46);
-  font-style: normal;
+    font-style: normal;
 }
 .cards{
     border: 1px solid black;
@@ -101,7 +100,7 @@ h5{
     color: rgb(189, 46, 46);
     text-align: center;
     text-transform: uppercase;
-   padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 .flex .testdolce{
     @media screen and(min-width:450px) and (max-width:990px){
@@ -112,11 +111,11 @@ h5{
 .carousel{
     margin: auto;
     position: relative;
-     text-align: center;
+    text-align: center;
  }
   
     .imgcar{
-         width: 70%;
+        width: 70%;
         border: 3px solid black;
         margin-bottom: 50px;
         box-shadow: 3px 3px 3px 3px gray ;

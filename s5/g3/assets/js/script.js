@@ -57,10 +57,12 @@ sparisci.addEventListener('click', function () {
 }
 )
 
+
 let  underline = document.getElementById('elemento1')
 underline.addEventListener('mouseover',function(){
 underline.style.textDecoration = 'underline'
 })
+
 let  lineT = document.getElementById('elemento2')
 lineT.addEventListener('mouseover',function(){
 lineT.style.textDecoration = 'line-through'

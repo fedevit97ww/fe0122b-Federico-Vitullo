@@ -29,57 +29,20 @@ var FirstUser = /** @class */ (function () {
     };
     return FirstUser;
 }());
-var SecondUser = /** @class */ (function () {
-    function SecondUser(caricaMoney, numeroChiamate) {
-        this.caricaMoney = caricaMoney;
-        this.numeroChiamate = numeroChiamate;
-    }
-    SecondUser.prototype.ricarica = function (soldi) {
-        this.caricaMoney += soldi;
-    };
-    SecondUser.prototype.chiamata = function (minuti) {
-        this.caricaMoney -= (0.20 * minuti);
-        this.numeroChiamate += 1;
-    };
-    SecondUser.prototype.numero404 = function () {
-        return this.caricaMoney;
-    };
-    SecondUser.prototype.getNumeroChiamate = function () {
-        return this.numeroChiamate;
-    };
-    SecondUser.prototype.azzeraChiamate = function () {
-        return this.numeroChiamate = 0;
-    };
-    return SecondUser;
-}());
-var ThirdUser = /** @class */ (function () {
-    function ThirdUser(caricaMoney, numeroChiamate) {
-        this.caricaMoney = caricaMoney;
-        this.numeroChiamate = numeroChiamate;
-    }
-    ThirdUser.prototype.ricarica = function (soldi) {
-        this.caricaMoney += soldi;
-    };
-    ThirdUser.prototype.chiamata = function (minuti) {
-        this.caricaMoney -= (0.20 * minuti);
-        this.numeroChiamate += 1;
-    };
-    ThirdUser.prototype.numero404 = function () {
-        return this.caricaMoney;
-    };
-    ThirdUser.prototype.getNumeroChiamate = function () {
-        return this.numeroChiamate;
-    };
-    ThirdUser.prototype.azzeraChiamate = function () {
-        return this.numeroChiamate = 0;
-    };
-    return ThirdUser;
-}());
-var Majeed = new ThirdUser(10, 2);
-var Erica = new FirstUser(15, 0);
-var Elisabetta = new SecondUser(20, 0);
-var Sergiu = new FirstUser(0, 0);
-var credito1 = document.getElementById('s1');
-credito1.innerHTML = Majeed.caricaMoney + '€';
-var chiamate1 = document.getElementById('c1');
+var utente = new FirstUser(10, 2);
+console.log(utente.chiamata(5));
+console.log(utente.ricarica(3));
+console.log(utente.numero404());
+console.log(utente.getNumeroChiamate());
+console.log(utente.azzeraChiamate());
+/*let credito1:any = document.getElementById('s1');
+credito1.innerHTML = Majeed.caricaMoney +'€';
+
+let chiamate1:any = document.getElementById('c1');
 chiamate1.innerHTML = Majeed.numeroChiamate;
+
+let chiama:any = document.getElementById('chiama')
+
+chiama.addEventListener('click',function(){
+ alert('ciao')
+})*/ 

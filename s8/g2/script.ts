@@ -29,7 +29,7 @@ class MotherAccount extends SonAccount {
     addInterests(): number {
         return this.saldo += this.interests()
     }
-    
+
 }
 
 //oggetti
@@ -71,7 +71,7 @@ versaM.addEventListener('click', () => {
     let int: any = document.querySelector('#interessi');
     int.innerHTML = madre.interests();
     saldofinale.innerHTML = `Saldo più interessi : ${madre.saldo + madre.interests()}`;
-    
+
 })
 
 let prelM: any = document.getElementById('prelevaM')
@@ -87,7 +87,7 @@ prelM.addEventListener('click', () => {
 
 
 //funzione per prendere il valore nell'input di versamento
-function getVers(el: any) {
+function getVers(el: any, /*target1: string, target2: string*/) {
     if (el == figlio) {
         let campoV: any = document.getElementById("versamento");
         let campoVal = Number(campoV.value);

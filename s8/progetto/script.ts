@@ -3,14 +3,12 @@ fetch('Abbigliamento.json')
     .then(risposta => {
         let contVestiti: any = [];
         risposta.forEach((item: Abbigliamento) => {
-
             var vestiti = new Abbigliamento(item.id, item.codprod, item.collezione, item.capo, item.modello, item.quantita, item.colore, item.prezzoivaesclusa, item.prezzoivainclusa, item.disponibile, item.saldo);
             contVestiti.push(vestiti)
             console.log(vestiti);
             console.log('xxxxxxxxxxxxx')
             console.log('xxxxxxxxxxxxx')
             console.log('Il prezzo IVA esclusa del capo ' + item.capo + ' è di ' + item.prezzoivaesclusa + ' applicando uno sconto del ' + item.saldo + '%' + ' il totale imponibile risulta: ' + vestiti.getSaldocapo());
-
             console.log('Il prezzo del capo ' + item.capo + ' scontato del ' + item.saldo + '% è: ' + vestiti.getAcquistoCapo() + ' IVA inclusa');
         });
 

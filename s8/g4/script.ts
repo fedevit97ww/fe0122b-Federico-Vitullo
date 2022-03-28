@@ -47,63 +47,26 @@ class FirstUser implements Smartphone{
     }
 }
 
-class SecondUser implements Smartphone{
-    public caricaMoney: number;
-    public numeroChiamate: number;
-    constructor(caricaMoney:number,numeroChiamate: number){
-        this.caricaMoney = caricaMoney;
-        this.numeroChiamate = numeroChiamate;
-    }
-    ricarica(soldi:number): void {
-    this.caricaMoney += soldi;
-    }
-    chiamata(minuti:number): void {
-    this.caricaMoney -= (0.20 * minuti);
-    this.numeroChiamate += 1
-    }
-    numero404():number{
-        return this.caricaMoney;
-    }
-    getNumeroChiamate(): number {
-        return this.numeroChiamate;
-    }
-    azzeraChiamate(): number {
-       return this.numeroChiamate = 0;
-    }
-}
 
-class ThirdUser implements Smartphone{
-    public caricaMoney: number;
-    public numeroChiamate: number;
-    constructor(caricaMoney:number,numeroChiamate: number){
-        this.caricaMoney = caricaMoney;
-        this.numeroChiamate = numeroChiamate;
-    }
-    ricarica(soldi:number): void {
-    this.caricaMoney += soldi;
-    }
-    chiamata(minuti:number): void {
-    this.caricaMoney -= (0.20 * minuti);
-    this.numeroChiamate += 1
-    }
-    numero404():number{
-        return this.caricaMoney;
-    }
-    getNumeroChiamate(): number {
-        return this.numeroChiamate;
-    }
-    azzeraChiamate(): number {
-       return this.numeroChiamate = 0;
-    }
-}
+let utente = new FirstUser(10,2);
 
-let Majeed = new ThirdUser(10,2);
-let Erica = new FirstUser(15,0);
-let Elisabetta = new SecondUser (20,0);
-let Sergiu = new FirstUser(0,0);
 
-let credito1:any = document.getElementById('s1');
+console.log(utente.chiamata(5))
+console.log(utente.ricarica(3))
+console.log(utente.numero404())
+console.log(utente.getNumeroChiamate())
+console.log(utente.azzeraChiamate())
+
+
+
+/*let credito1:any = document.getElementById('s1');
 credito1.innerHTML = Majeed.caricaMoney +'€';
 
 let chiamate1:any = document.getElementById('c1');
 chiamate1.innerHTML = Majeed.numeroChiamate;
+
+let chiama:any = document.getElementById('chiama')
+
+chiama.addEventListener('click',function(){
+ alert('ciao')
+})*/
